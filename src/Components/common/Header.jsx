@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import mishra from "../../assets/mishra.jpeg";
 import { Link } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <ToastContainer />
@@ -14,8 +15,17 @@ export default function Header() {
                             RAGHAV VATS
                         </h1>
                     </div>
-                    <nav class="hidden sm:inline-block">
-                        <ul class="flex gap-6 md:gap-10 lg:gap-16">
+                    {/* Toggle button */}
+                    <button
+                        className="md:hidden flex flex-col gap-1"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <span className="w-6 h-0.5 bg-white"></span>
+                        <span className="w-6 h-0.5 bg-white"></span>
+                        <span className="w-6 h-0.5 bg-white"></span>
+                    </button>
+                    <nav className={`${isOpen ? "block" : "hidden"} md:block`}>
+                        <ul className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-16">
                             <li class="uppercase text-blue-500 font-bold text-xs "><Link to="/">HOME</Link></li>
                             <li class="uppercase font-bold text-xs text-white"><Link to="/about">About</Link></li>
                             <li class="uppercase font-bold text-xs text-white"><Link to="/service">SERVICES</Link></li>
