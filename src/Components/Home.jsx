@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         {/* <!-- About --> */}
-        <div class="mt-8 border-b border-gray-700 pb-8 ml-20">
+        <div class="mt-8 border-b border-gray-700 pb-8 ">
           <h2 class="text-2xl font-semibold mb-4">
             <span class="text-blue-500">About  </span>
             Me
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
 
         {/* <!-- Services --> */}
-        <div class="mt-8 border-b border-gray-700 pb-8 ml-20">
+        <div class="mt-8 border-b border-gray-700 pb-8">
           <h2 class="text-2xl font-semibold mb-4">
             <span class="text-blue-500">My  </span>
             Services
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
 
         {/* <!-- Projects --> */}
-        <div class="mt-8 ml-20">
+        <div class="mt-8">
           <h2 class="text-2xl font-semibold mb-4">
             <span class="text-blue-500">Latest  </span>
             Projects
