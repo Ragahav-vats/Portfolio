@@ -22,8 +22,8 @@ export default function Contact() {
       <div className="bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
 
-        <p class="text-white">Email: yourmail@gmail.com</p>
-        <p>Phone: +91 1234567890</p>
+        <p class="text-white">Email:raghavmishra98601@gmail.com</p>
+        <p>Phone: +91 6287755372</p>
 
         <form class="space-y-3" onSubmit={formHandler}>
           <input type="text" placeholder="Your Name"
