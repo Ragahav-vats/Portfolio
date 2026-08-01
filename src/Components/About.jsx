@@ -26,9 +26,73 @@ const About = () => {
               Hello! I'm <span class="font-semibold text-blue-500">Raghav</span>, a passionate Full Stack Developer who loves building modern and responsive web applications.
             </p>
 
-            <p class="text-gray-500 mb-6">
-              I specialize in HTML, CSS, JavaScript, React, and backend technologies. I enjoy solving problems and creating user-friendly experiences.
-            </p>
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold text-blue-500 mb-3">
+                Latest Internship Experience
+              </h3>
+
+              <div className="bg-gray-100 rounded-xl p-5 border-l-4 border-blue-500">
+                <h4 className="text-xl font-bold text-gray-800">
+                  Full Stack Web Development Intern
+                </h4>
+
+                <p className="text-blue-600 font-medium mb-3">
+                  Upstare Research Pvt. Ltd.
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                  <li>
+                    Developed responsive and modern web applications using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB.
+                  </li>
+
+                  <li>
+                    Built and optimized multiple real-world projects with clean, reusable, and scalable code.
+                  </li>
+
+                  <li>
+                    Integrated REST APIs, authentication, and database operations for full-stack applications.
+                  </li>
+
+                  <li>
+                    Collaborated with the development team using Git and GitHub for version control and project management.
+                  </li>
+
+                  <li>
+                    Improved application performance, responsiveness, and user experience by following industry best practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold text-blue-500 mb-3">
+                Latest Internship Experience
+              </h3>
+
+              <div className="bg-gray-100 rounded-xl p-5 border-l-4 border-blue-500">
+                <h4 className="text-xl font-bold text-gray-800">
+                  Full Stack Web Development Intern
+                </h4>
+
+                <p className="text-blue-600 font-medium mb-3">
+                  Sunsys Techsol Pvt. Ltd.
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                  <li>
+                    Integrated REST APIs, authentication, and database operations for full-stack applications.
+                  </li>
+
+                  <li>
+                    Collaborated with the development team using Git and GitHub for version control and project management.
+                  </li>
+
+                  <li>
+                    Improved application performance, responsiveness, and user experience by following industry best practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
             {/* <!-- Button --> */}
             <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition duration-300">

@@ -4,10 +4,15 @@ import wheather from "../assets/wheather.jpeg";
 import movie from "../assets/movie.jpeg";
 import image from "../assets/image.jpeg";
 import website from "../assets/website.jpeg";
+import Learning from "../assets/Learning.jpeg";
+import Astrology from "../assets/Astrology.jpeg";
+import resume from "../assets/Resume.pdf";
 
 export default function Home() {
 
   const [readMore, setReadMore] = useState(false);
+  const [showProjects, setShowProjects] = useState(false);
+
   return (
     <>
       {/* <!-- Portfolio Section Start --> */}
@@ -64,8 +69,8 @@ export default function Home() {
                   {readMore ? "Show Less -" : "Read More +"}
                 </button>
                 <a
-                  href="/resume.pdf"
-                  download="My_Resume.pdf"
+                  href={resume}
+                  download="Raghav_Mishra_Resume.pdf"
                   className="border border-gray-500 px-4 py-2 rounded-md hover:bg-gray-700"
                 >
                   Download Resume
@@ -108,7 +113,7 @@ export default function Home() {
             Projects
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
             <div class="bg-[#1e293b] rounded-lg overflow-hidden">
               <img
@@ -137,20 +142,50 @@ export default function Home() {
               <p class="p-3 text-center text-lg font-semibold">Corporate Website</p>
             </div>
 
-            <div class="bg-[#1e293b] rounded-lg overflow-hidden">
-              <img
-                src={wheather}   // 👈 yaha file name nahi, variable use hota hai
-                alt="wheather"
-                class="rounded-lg w-full h-36 object-cover"
-              />
-              <p class="p-3 text-center text-lg font-semibold">Landing Page Design</p>
-            </div>
+            {showProjects && (
+              <>
+                <div className="bg-[#1e293b] rounded-lg overflow-hidden">
+                  <img
+                    src={Learning}
+                    alt="Learning"
+                    className="rounded-lg w-full h-36 object-cover"
+                  />
+                  <p className="p-3 text-center text-lg font-semibold">
+                    Learning Management System
+                  </p>
+                </div>
+
+                <div className="bg-[#1e293b] rounded-lg overflow-hidden">
+                  <img
+                    src={Astrology}
+                    alt="Astrology"
+                    className="rounded-lg w-full h-36 object-cover"
+                  />
+                  <p className="p-3 text-center text-lg font-semibold">
+                    Astrology Website
+                  </p>
+                </div>
+
+                <div class="bg-[#1e293b] rounded-lg overflow-hidden">
+                  <img
+                    src={wheather}   // 👈 yaha file name nahi, variable use hota hai
+                    alt="wheather"
+                    class="rounded-lg w-full h-36 object-cover"
+                  />
+                  <p class="p-3 text-center text-lg font-semibold">Landing Page Design</p>
+                </div>
+
+              </>
+            )}
 
           </div>
 
           <div class="text-center mt-6">
-            <button class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-md">
-              View All Projects +
+            <button
+              onClick={() => setShowProjects(!showProjects)}
+              className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-md"
+            >
+              {showProjects ? "Hide Projects -" : "View All Projects +"}
             </button>
           </div>
         </div>

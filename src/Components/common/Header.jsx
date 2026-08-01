@@ -10,11 +10,13 @@ export default function Header() {
             <ToastContainer />
             <section class="bg-[#302c42] overflow-hidden pb-9 px-4 md:px-8">
                 <header class="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
+                    <Link to="/">
                     <div class="flex items-center gap-3">
                         <h1 className='text-blue-500 text-xl font-bold'>
                             RAGHAV VATS
                         </h1>
                     </div>
+                    </Link>
                     {/* Toggle button */}
                     <button
                         className="md:hidden flex flex-col gap-1"
