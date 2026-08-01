@@ -1,5 +1,6 @@
 import React from 'react'
 import mishra from "../assets/mishra.jpeg";
+import { Link } from 'react-router';
 
 const About = () => {
   return (
@@ -94,10 +95,42 @@ const About = () => {
               </div>
             </div>
 
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold text-blue-500 mb-3">
+                Certifications
+              </h3>
+
+              <div className="bg-gray-100 rounded-xl p-5 border-l-4 border-green-500">
+                <h4 className="text-xl font-bold text-gray-800">
+                  Full Stack Web Development Certification
+                </h4>
+
+                <p className="text-green-600 font-medium mb-3">
+                  Upstare Research Pvt. Ltd.
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                  <li>
+                    Successfully completed a Full Stack Web Development training program covering modern frontend and backend technologies.
+                  </li>
+
+                  <li>
+                    Gained hands-on experience with HTML, CSS, JavaScript, React.js, Tailwind CSS, Node.js, Express.js, and MongoDB.
+                  </li>
+
+                  <li>
+                    Successfully completed practical projects demonstrating real-world full-stack development skills.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* <!-- Button --> */}
+            <Link to="/contact">
             <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition duration-300">
               Contact Me
             </button>
+            </Link>
           </div>
 
         </div>
